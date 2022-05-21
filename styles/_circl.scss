@@ -2,9 +2,21 @@
     margin: 20px 0 20px 0;
 
     &__ball {
+        position: relative;
         border-radius: 50% 50%;
         background-color: darkblue;
         width: 100px;
         height: 100px;
+        left: 0;
+
+        // animation-name: ball-move;
+        // animation-duration: 5s;
+        // animation-iteration-count: infinite;
+        // animation-delay: 3s;
+        // animation-direction: alternate;
+        // animation-timing-function: linear;
+
+        animation: 5s ball-move 3s infinite  alternate linear;
     }
+
 }
