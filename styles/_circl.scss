@@ -1,0 +1,10 @@
+.circle {
+    margin: 20px 0 20px 0;
+
+    &__ball {
+        border-radius: 50% 50%;
+        background-color: darkblue;
+        width: 100px;
+        height: 100px;
+    }
+}
