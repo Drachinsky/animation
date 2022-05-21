@@ -1,0 +1,19 @@
+@keyframes ball-move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+.circle {
+  margin: 20px 0 20px 0;
+}
+.circle__ball {
+  border-radius: 50% 50%;
+  background-color: darkblue;
+  width: 100px;
+  height: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
