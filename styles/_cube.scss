@@ -1,0 +1,50 @@
+.cube {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+    position: relative;
+    height: 20px;
+
+    &__container {        
+        position: relative;
+        width: 40px;
+        height: 40px;
+        animation: 3s container-animation infinite alternate;
+    }
+
+    &__item {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include border(1px, #fff);
+
+        &--red {
+            border-color: red;
+            animation: 3s box-one infinite alternate;
+            
+        }
+
+        &--blue {
+            border-color: blue;
+            animation: 3s box-two infinite alternate;
+            
+        }
+        
+        &--green {
+            border-color: green;
+            animation: 3s box-three infinite alternate;
+            
+        }
+        
+        &--yellow {
+            border-color: yellow;
+            animation: 3s box-four infinite alternate;
+            
+        }
+    }
+
+   
+}
