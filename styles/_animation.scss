@@ -7,3 +7,54 @@
         left: calc(100% - 100px);
     }
 }
+
+@keyframes container-animation {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes box-one {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-110%, 0);
+    }
+}
+
+@keyframes box-two {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(110%, 0);
+    }
+}
+
+@keyframes box-three {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(0, 110%);
+    }
+}
+
+@keyframes box-four {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(0, -110%);
+    }
+}
+
