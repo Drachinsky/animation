@@ -1,3 +1,10 @@
 @mixin border($widht, $color) {
     border: $widht solid $color;    
 }
+
+@mixin image($url) {
+    background: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
