@@ -4,11 +4,11 @@
     }
 
     to {
-        left: calc(100% - 100px);
+        left: calc(100% - 35vw);
     }
 }
 
-@keyframes rotate-wheel {
+@-webkit-keyframes rotate-wheel {
     0% {
         -webkit-transform: rotate(-360deg);
     }
@@ -16,6 +16,36 @@
     100% {
         -webkit-transform: rotate(360deg);
     }    
+}
+
+@-moz-keyframes rotate-wheel {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-wheel {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-wheel {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes ball-move {
