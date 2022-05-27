@@ -1,12 +1,14 @@
-.car {
-    max-width: 100vh;
+.main {
+    overflow: hidden;
+}
+
+.section__car {
+    min-height: 100vh;
     padding: 50px 0 50px 0;
 
-    &__row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+   
+
+    &-row {
         position: relative;
         animation-name: car-move;
         left: 0;
@@ -16,42 +18,45 @@
         animation-delay: 3s;
         animation-timing-function: linear;
         
-        
-        &-body {
-            
-            position: relative;
-        }
-
-        &-left-wheel {
-            position: absolute;
-            animation-name: rotate-wheel;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-delay: 3s;
-            animation-timing-function: linear;
-            left: 26px;
-            bottom: -31px;
-        }
-
-        &-right-wheel {
-            position: absolute;
-            animation-name: rotate-wheel;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-delay: 3s;
-            animation-timing-function: linear;
-            right: 22px;
-            bottom: -31px;
-
-        }
-
-        &-item {
-            width: 133px;
-            height: 133px;
-        }
     }
+
+    &-body {           
+        overflow: hidden;
+        padding-bottom: 100px;
+        position: relative;
+        width: 35vw;
+    }
+
+   
+
+    &-left-wheel {
+        position: absolute;   
+        animation-name: rotate-wheel;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 3s;
+        animation-timing-function: linear;
+        top: 7vw;
+        left: 3vw;
+        max-width: 7vw;
+    }
+
+    &-right-wheel {
+        position: absolute;
+        animation-name: rotate-wheel;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 3s;
+        animation-timing-function: linear;
+        top: 7vw;
+        left: 25vw;
+        max-width: 7vw;
+
+    }
+
+    
 
    
 
