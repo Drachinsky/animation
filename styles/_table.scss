@@ -3,9 +3,9 @@
     &-gear {
         display: grid;
         grid-template-areas: 
-        'one one two two two three three three three four four'
-        'five five two two two three three three three six six'
-        'seven seven eight nine nine three three three three ten ten'
+        'one    one    two    two    two    three three three three four   four'
+        'five   five   two    two    two    three three three three six    six'
+        'seven  seven  eight  nine   nine   three three three three ten    ten'
         'eleven eleven eleven eleven eleven three three three three twelve twelve';
         grid-gap: 5px;
         padding: 50px 0 50px 0; 
